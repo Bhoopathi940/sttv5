@@ -51,6 +51,6 @@ ENV PATH="/opt/venv/bin:$PATH" \
 # Create models dir
 RUN mkdir -p /app/models
 
-EXPOSE 8000
+EXPOSE 8001
 
-CMD ["uvicorn", "parakeet_service.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "parakeet_service.main:app", "--host", "0.0.0.0", "--port", "8001"]
