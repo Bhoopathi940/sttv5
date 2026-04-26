@@ -1,20 +1,23 @@
+# Web Server
 fastapi
-uvicorn
-numpy
-torch
-torchaudio
+uvicorn[standard]
 pydantic
-omegaconf
-pytest
 python-multipart
-ffmpeg-python
 python-dotenv
-onnx-asr[hub]>=0.10.0
-waitress>=3.0.0
-flask>=3.0.0
-openai>=1.0.0
-typing_extensions>=4.0.0
+
+# Core Math & Logic
+numpy<2
 psutil>=5.0.0
 requests>=2.0.0
+typing_extensions>=4.0.0
+omegaconf
+
+# Audio & ML (CPU Optimized)
+torch --index-url https://pytorch.org
+torchaudio --index-url https://pytorch.org
 onnxruntime>=1.18.1
-numpy<2
+onnx-asr[hub]>=0.10.0
+ffmpeg-python
+
+# Development
+pytest
